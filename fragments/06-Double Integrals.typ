@@ -65,6 +65,33 @@ cos 2 theta = 1 - 2 sin^2 theta \
 = 8 pi
 $
 
+== Line Integrals (Curve Integrals)
+Suppose we have a curve $C$ defined parametrically
+$
+arrow(r)(t) = (x(t), y(t)), t in [a,b]\
+"Line Integral": integral_C f(x, y) dif S
+$surface and $dif S$ Where $f(x,y)$ corresponds to a surface and $dif S$ corresponds to little bits of arc length
+$
+= integral_a^b f(x(t), y(t)) dot sqrt(((dif x)/(dif t))^2 + ((dif y)/(dif t))^2) dif t
+$
+
+== Green's Theorem
+Say we have a vector field $arrow(F) = (P, Q)$, $C$: Simple closed curve, $C$ needs to be positively oriented. The curve is positively oriented if the inside of the curve is on the left side (if you imagine walking around the curve), and the area bounded by $C$ is called $D$.
+$
+integral_C arrow(F) dot dif arrow(r) = integral P dif x dot Q dif y = integral.double_D (Q_x - P_y) dif A
+$
+This is meaningless if the vector field is conservative
+
+Ex 1
+$
+integral_C x^4 dif x + x y dif y, C: "Triangle bounded by" (0,0), (1,0), (0,1)\
+arrow(F) = (x^4, x y)\
+integral.double_D y - 0 dif A\
+"Type I region"\
+integral_0^1 integral_0^(1-x) y dif y dif x\
+= 1/6
+$
+
 == Vector Fields - What are they?
 More general functions, vector input $->$ vector output, somewhat like a wind map, at all points there is a vector representing the wind at a specific point.
 
