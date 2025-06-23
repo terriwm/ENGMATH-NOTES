@@ -63,6 +63,9 @@
 #include "fragments/01-Basics of Calculus.typ"
 #include "fragments/02-Differential Equations.typ"
 #include "fragments/03-Stats.typ"
+#include "fragments/04-Vectors.typ"
+#include "fragments/05-Partial Derivatives.typ"
+#include "fragments/06-Double Integrals.typ"
 
 // 16.2 Q4
 // $
