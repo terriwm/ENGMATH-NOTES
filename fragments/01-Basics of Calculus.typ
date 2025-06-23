@@ -32,7 +32,7 @@
 
 === Trig Subsitution
 #table(
-  table.cell(fill: blue.lighten(50%))[Expression],table.cell(fill: blue.lighten(50%))[Substitution],table.cell(fill: blue.lighten(50%))[Identity],
+  table.cell(fill: rgb(153, 215, 255))[Expression],table.cell(fill: rgb(153, 215, 255))[Substitution],table.cell(fill: rgb(153, 215, 255))[Identity],
   [$ sqrt(a^2 - x^2) $],[$ x = a sin theta $],[$ 1 - sin^2 theta = cos^2 theta $],
   [$ sqrt(a^2 + x^2) $],[$ x = a tan theta $],[$ 1 + tan^2 theta = sec^2 theta $],
   [$ sqrt(x^2 - a^2) $],[$ x = a sec theta $],[$ sec^2 theta - 1 = tan^2 theta $],
@@ -48,13 +48,13 @@
 #text(fill: green)[$ integral (x^3 - 4x - 10)/(x^2 - x - 6) d x $]
 #table(
   [],[],[],[$x$],[$+1$],
-  table.hline(start: 1),
-  [$x^2-x-6$], table.vline(start: 1, end: 2),[$x^3$],[$+0x^2$],[$-4x$],[$-10$],
+  table.hline(start: 1, stroke: 0.5pt),
+  [$x^2-x-6$], table.vline(start: 1, end: 2, stroke: 0.5pt),[$x^3$],[$+0x^2$],[$-4x$],[$-10$],
   [#align(right)[$-$]],[$(x^3$],[$-x^2$],[$-6x$],[$+0)$],
-  table.hline(start: 1),
+  table.hline(start: 1, stroke: 0.5pt),
   [],[],[$x^2$],[$+2x$],[$-10$],
   [],[#align(right)[$-$]],[$(x^2$],[$-x$],[$-6)$],
-  table.hline(start: 2),
+  table.hline(start: 2, stroke: 0.5pt),
   [],[],[],[$3x$],[$-4$],
   
   stroke: none,
