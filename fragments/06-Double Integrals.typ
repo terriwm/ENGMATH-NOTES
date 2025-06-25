@@ -91,6 +91,7 @@ integral.double_D y - 0 dif A\
 integral_0^1 integral_0^(1-x) y dif y dif x\
 = 1/6
 $
+It may be useful/required to draw a diagram of the bounding area.
 
 == Vector Fields - What are they?
 More general functions, vector input $->$ vector output, somewhat like a wind map, at all points there is a vector representing the wind at a specific point.

@@ -10,26 +10,6 @@ When we do this, we often just want to observe what happens when we change one t
 $ (partial f)/(partial x) = f_x = 1/2(x+2y)^(-1/2)(1) \
 f_y = 1/2(x+2y)^(-1/2)(2)
 $
-14.2, 15)
-$
-f(x, y) = x^4 + 5x y^3 \
-f_x = 4x^3 + 5y^3 \
-f_y = 0 + 15x y^2 \
-f_(x y) = 0 + 15y^2 "{Second partial, with respect to "x" then "y"}"\
-f_(x x) = 12x^2 + 0
-$
-19)
-$
-z = ln(x+t^2) \
-z_x = (1)/(x+t^2) \
-z_t = (2t)/(x+t^2)
-$
-28)
-$
-f(x, y) = x^y \
-f_x = y x^(y-1) \
-f_y = x^y ln(y)
-$
 $f_(x y) = f_(x x)$ When $f$ is "nice", $f_(x x y) = f_(y x x) = f_(x y x)$, polynomials are always nice
 === Product Rule
 $

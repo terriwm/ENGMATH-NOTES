@@ -45,27 +45,6 @@ y x^2 = integral 6 x^2 dif x\
 y x^2 = 2x^3 + C\
 y = 2x + C/x^2
 $
-== SE2 Q2 (b) - Bernoulli DE
-$
-y' - 2/x y = 5y^3\
-"Multiply by" (1-n)y^(-n)\
-"set" u = y^(1-n)\
--2/y^3 y' + 4/(x) 1/(y^2) = -10\
-"let" u = y^(-2)\
-u' = -2y^(-3)y'\
-u' + 4/x u = -10
-$
-$
-I(x) = e^(integral 4/x dif x) = e^(4 ln x) = x^4\
-x^4 u' + 4x^3 u = 10 x^4 \
-(u x^4)' = -10x^4\
-u x^4 = -2x^5 + C\
-u = (-2x^5+C)x^4\
-1/y^2 = u\
-1/y^2 = -2x + C/x^4\
-y^2 = x^4/(C-2x^5)\
-y = plus.minus sqrt(x^4/(C-2x^5))
-$
 
 == SE2 Q3 - Coefficients
 $
@@ -99,6 +78,8 @@ r^2 - 2r - 3 = 0\
 r = -3, r = 1\
 y_c(x) =C_1 e^(3x) + C_2 e^(-x)\
 y_p(x) = u_1 e^(3x) + u_2 (x)e^(-x)\
+$
+$
 u_1 = -1/a integral (y_2(x) f(x))/(W(y_1, y_2)) dif x\
 u_1 = 1/a integral (y_1(x) f(x))/(W(y_1, y_2)) dif x\
 W = mat(y_1, y_2; y'_1, y'_2) = y_1 y'_2 - y_2 y'_1\
@@ -110,4 +91,37 @@ u_2 = integral (e^(3x) dot 4e^(5x))/(-4e^(2x)) dif x\
 u_2 = integral -e^(6x) dif x = -1/6 e^(6x)\
 y_p = 1/2 e^(5x) - 1/6 e^(5x) = 1/3 e^(5x)\
 y = C_1 e^(3x) + C_2 e^(-x) + 1/3 e^(5x)
+$
+
+== SE 1 Q1 (b)
+$
+(dif y)/(dif x) = 4x - 5y\
+"Using" u = y - a x\
+(dif u)/(dif x) = (dif y)/(dif x) - a\
+(dif u)/(dif x) + a = 4 x - 5 (u - a x) \
+(dif u)/(dif x) = (4 -5a) x - 5u - a\
+"Want to cancel" x\
+(4 - 5 a ) = 0\
+a = 4/5\
+(dif u)/(dif x) = -4/5 - 5u\
+(dif u)/(dif x) = -5 (u + 4/25)\
+integral 1/(u+ 4/25) dif u = - integral 5 dif x\
+ln(abs(u + 4/25)) = -5x + C\
+u + 4/25 = C e^(-5x)\
+u = C e^(-5x) - 4/25\
+y - 4/5 x = C e^(-5x) - 4/25\
+y = 4/5 x + C e^(-5x) - 4/25
+$
+
+== SE 1 Q9 (b)
+$
+integral.cont y dif x - x dif y, "Bounded by the circle at the origin of radius" 4\
+arrow(F) = (y, -x)\
+integral.double_D (-1 -1) dif A\
+"Switch to polar coords"\
+integral_0^(2 pi) integral_0^4 -2 r dif r dif theta\
+integral_0^(2 pi) [-r^2]_0^4 dif theta\
+integral_0^(2 pi) -16 dif theta\
+[-16theta]_0^(2 pi)\
+= - 32 pi
 $

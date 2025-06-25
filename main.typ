@@ -68,3 +68,8 @@
 #include "fragments/06-Double Integrals.typ"
 #include "fragments/07-Sample Exam.typ"
 
+
+#align(center)[
+  #image("imgs/Haythorpe_mogging.png", width: 50%)
+  Big $D$?
+]

@@ -43,6 +43,7 @@ Break into "bins" e.g. $10 < X <= 15$, Then produce a frequency table, and graph
 
 
 == Averages
+When mean > mode, Right Skew. mean < mode, Left Skew
 === Mean
 Arithmatic Mean:
 $ overline(X) = (sum X)/n $
