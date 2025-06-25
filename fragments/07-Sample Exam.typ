@@ -56,8 +56,11 @@ r = 2\
 y_c (x) = C_1 e^(2x) + C_2 x e^(2x) \
 y_p (x) = (A x + B)e^x + C sin x + D cos x\
 y'_p = A e^x + (A x + B) e^x + C cos x - D sin x\
-y''_p = A e^x +(A x A + B) e^x - C sin x - D cos x\
-(A x + 2A + B)e^x - (sin x - D cos x -4(A x + A + B)e^x) \ - 4(cos x + 4D sin x + 4(A x+B)e^x + 4C sin x + 4D cos x)\
+y'_p = (A x + A + B) e^x + C cos x - D sin x\
+y''_p = A e^x +(A x + A + B) e^x - C sin x - D cos x\
+y''_p = (A x + 2 A + B)e^x - C sin x - D cos x\
+"Plug into original equation"\
+(A x + 2A + B)e^x - C sin x - D cos x -4(A x + A + B)e^x\ - 4(cos x + 4D sin x + 4(A x+B)e^x + 4C sin x + 4D cos x)\
 = A x e^x + (2A + B - 4A - 4B)e^x + (-D - 4C + 4D)cos x \ + (-C +4D + 4C)sin x\
 = A x e^x + (B - 2A)e^x + (3D - 4C)cos x + (3C + 4D)sin x \ = 2x e^x + 25 sin x\
 A = 2\
@@ -76,10 +79,10 @@ y'' - 2y' - 3y = 4e^(5x)\
 r^2 - 2r - 3 = 0\
 (r+3)(r-1) = 0\
 r = -3, r = 1\
+$
+$
 y_c(x) =C_1 e^(3x) + C_2 e^(-x)\
 y_p(x) = u_1 e^(3x) + u_2 (x)e^(-x)\
-$
-$
 u_1 = -1/a integral (y_2(x) f(x))/(W(y_1, y_2)) dif x\
 u_1 = 1/a integral (y_1(x) f(x))/(W(y_1, y_2)) dif x\
 W = mat(y_1, y_2; y'_1, y'_2) = y_1 y'_2 - y_2 y'_1\
