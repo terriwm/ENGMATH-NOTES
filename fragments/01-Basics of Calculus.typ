@@ -44,26 +44,26 @@
   columns: (1fr, 1fr),
 )
 
-=== Partial Fraction Decomposition
-#text(fill: green)[$ integral (x^3 - 4x - 10)/(x^2 - x - 6) d x $]
-#table(
-  [],[],[],[$x$],[$+1$],
-  table.hline(start: 1, stroke: 0.5pt),
-  [$x^2-x-6$], table.vline(start: 1, end: 2, stroke: 0.5pt),[$x^3$],[$+0x^2$],[$-4x$],[$-10$],
-  [#align(right)[$-$]],[$(x^3$],[$-x^2$],[$-6x$],[$+0)$],
-  table.hline(start: 1, stroke: 0.5pt),
-  [],[],[$x^2$],[$+2x$],[$-10$],
-  [],[#align(right)[$-$]],[$(x^2$],[$-x$],[$-6)$],
-  table.hline(start: 2, stroke: 0.5pt),
-  [],[],[],[$3x$],[$-4$],
+// === Partial Fraction Decomposition
+// #text(fill: green)[$ integral (x^3 - 4x - 10)/(x^2 - x - 6) d x $]
+// #table(
+//   [],[],[],[$x$],[$+1$],
+//   table.hline(start: 1, stroke: 0.5pt),
+//   [$x^2-x-6$], table.vline(start: 1, end: 2, stroke: 0.5pt),[$x^3$],[$+0x^2$],[$-4x$],[$-10$],
+//   [#align(right)[$-$]],[$(x^3$],[$-x^2$],[$-6x$],[$+0)$],
+//   table.hline(start: 1, stroke: 0.5pt),
+//   [],[],[$x^2$],[$+2x$],[$-10$],
+//   [],[#align(right)[$-$]],[$(x^2$],[$-x$],[$-6)$],
+//   table.hline(start: 2, stroke: 0.5pt),
+//   [],[],[],[$3x$],[$-4$],
   
-  stroke: none,
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr)
-)
-#grid(
-  [$ = integral x+1 + (3x-4)/(x^2-x-6) d x \ = x^2/2 + x + integral (3x-4)/(x^2 - x - 6) d x \ x^2 - x - 6 = (x-3)(x+2) \ (3x-4)/((x-3)(x+2)) $],[$ = A/(x-3) + B/(x+2) \ "given" x = 3, x=-2 \ A = 1, B= 2 \ = integral x^2/2 + x + integral 1/(x-3) + 2/(x+2) d x \ = x^2/2 + x + ln|x+3|+2ln|x+2|+c $],
-  columns: (1fr, 1fr)
-)
+//   stroke: none,
+//   columns: (1fr, 1fr, 1fr, 1fr, 1fr)
+// )
+// #grid(
+//   [$ = integral x+1 + (3x-4)/(x^2-x-6) d x \ = x^2/2 + x + integral (3x-4)/(x^2 - x - 6) d x \ x^2 - x - 6 = (x-3)(x+2) \ (3x-4)/((x-3)(x+2)) $],[$ = A/(x-3) + B/(x+2) \ "given" x = 3, x=-2 \ A = 1, B= 2 \ = integral x^2/2 + x + integral 1/(x-3) + 2/(x+2) d x \ = x^2/2 + x + ln|x+3|+2ln|x+2|+c $],
+//   columns: (1fr, 1fr)
+// )
 
 == Trig Identities
 #table(
@@ -86,3 +86,13 @@
     [$tan 2theta=(2tan theta)/(1-tan^2theta)$], [$tan(x plus.minus y)=(tan x plus.minus tan y)/(1 minus.plus tan x tan y)$]
     
   )  
+
+== Linear trick
+If integrating a linear to a power and there is nothing outside...
+1. Add 1 to the power
+2. Divide the whole thing by the power
+3. Divide by the derivative of the inside
+4. Add +C if indefinite integral
+5. Simplify \
+*For a trigonometric function*, the linear trick allows:\
+#h(2em)$integral cos(5x)d x=1 / 5sin(5x)+c$

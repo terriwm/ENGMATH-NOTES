@@ -97,6 +97,8 @@ y = C_1 e^(3x) + C_2 e^(-x) + 1/3 e^(5x)
 $
 
 == SE 1 Q1 (b)
+#grid(
+    [
 $
 (dif y)/(dif x) = 4x - 5y\
 "Using" u = y - a x\
@@ -106,7 +108,10 @@ $
 "Want to cancel" x\
 (4 - 5 a ) = 0\
 a = 4/5\
-(dif u)/(dif x) = -4/5 - 5u\
+(dif u)/(dif x) = -4/5 - 5u
+$
+    ],[
+$
 (dif u)/(dif x) = -5 (u + 4/25)\
 integral 1/(u+ 4/25) dif u = - integral 5 dif x\
 ln(abs(u + 4/25)) = -5x + C\
@@ -115,16 +120,41 @@ u = C e^(-5x) - 4/25\
 y - 4/5 x = C e^(-5x) - 4/25\
 y = 4/5 x + C e^(-5x) - 4/25
 $
+    ],
+    columns: (1fr, 1fr,),
+)
 
 == SE 1 Q9 (b)
+$ integral.cont y dif x - x dif y, "Bounded by the circle at the origin of radius" 4 $
+#grid(
+    [
 $
-integral.cont y dif x - x dif y, "Bounded by the circle at the origin of radius" 4\
 arrow(F) = (y, -x)\
 integral.double_D (-1 -1) dif A\
 "Switch to polar coords"\
-integral_0^(2 pi) integral_0^4 -2 r dif r dif theta\
+integral_0^(2 pi) integral_0^4 -2 r dif r dif theta
+$
+    ],[
+$
 integral_0^(2 pi) [-r^2]_0^4 dif theta\
 integral_0^(2 pi) -16 dif theta\
 [-16theta]_0^(2 pi)\
 = - 32 pi
+$
+    ],
+    columns: (1fr, 1fr)
+)
+
+== SE 3 Q9 (a)
+$
+arrow(F)(x,y,z) = (1/sqrt(x+9), 1/sqrt(y+1), 1/sqrt(z+3))\
+"Over" r(t) = (t^2, 2t, 6)\
+r'(t) = (2t, 2, 0)
+arrow(F)(r(t)) = (1/sqrt(t^2 + 9), 1/sqrt(2t + 1), 1/3)\
+r'(t) dot arrow(F)(r(t)) = (2t)/sqrt(t^2 + 9) + 2/sqrt(2t + 1)\
+integral_0^4 (2t)/sqrt(t^2 + 9) + 2/sqrt(2t + 1) dif t\
+"let" u = t^2 + 9, dif u = 2t dif x, a = 9, b = 25\
+integral_9^25 u^(-1/2) dif t + 2 integral_0^4 1/sqrt(2t + 1) dif t\
+[2 sqrt(u)]_9^25 + 2[sqrt(2t + 1)]_0^4\
+10 - 6 + 6 - 2 = 8
 $
